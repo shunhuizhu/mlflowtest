@@ -1,0 +1,10 @@
+name: mnist
+channels:
+  - defaults
+dependencies:
+  - keras=2.4.3=0
+  - keras-base=2.4.3=py_0
+  - keras-preprocessing=1.1.0=py_1
+  - scikit-learn=0.22.1=py37hd81dba3_0
+  - pip:
+    - mlflow==1.9.1

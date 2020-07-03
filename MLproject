@@ -1,0 +1,12 @@
+name: mnist_model project
+conda_env: mnist.yaml
+entry_points:
+  main:
+    parameters:
+      data_file: 
+        type: string
+        default: /home/shunhui/sonicgit/sonicmlos/ML_Model/mlflow/data/mnist.data
+      epochs: 
+        type: int
+        default: 3
+    command: "python mnist_model.py {data_file} {epochs}"
